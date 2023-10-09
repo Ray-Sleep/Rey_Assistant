@@ -31,7 +31,7 @@ def login(req):
         return HttpResponse('注册失败，请输入正确的手机号')
     else:
         UserInfo.objects.create(name=username, number=number, password=password)
-        return render(req, 'user_list.html')
+        return render(req, 'index.html')
 
     # 登入
     """检测用户名、邮箱、电话 是否存在数据库"""
@@ -40,7 +40,11 @@ def login(req):
 
     # if username == 'admin' and password == '123':
     #     return HttpResponse('登录成功')
-    return HttpResponse('登录成功')
+    return render(req,'index.html')
+
+
+def index(request):
+    return render(request,'index.html')
 
 
 def user_list(req):
