@@ -1,29 +1,15 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: rgba(255,255,255,0.6);
-}
-
-.wrap{
-    width: 100%;
-    height: 100vh;
-    /*background: ;*/
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-}
 .nav{
+    position: fixed;
     width: 110px;
-    /*width: 280px;*/
     height: 1004px;
-    background:rgba(0,0,0,0.8);
-    border-bottom-right-radius: 20px;
-    border-top-right-radius: 20px;
+    /*border-bottom-right-radius: 20px;*/
+    /*border-top-right-radius: 20px;*/
     overflow: hidden;
     transition: 0.5s;
+    background: #b0c4de;
+    z-index: 10;
 }
+
 .nav:hover{
     width: 280px;
 }
@@ -38,6 +24,7 @@
 }
 
 .btn-item{
+    border: none;
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -86,7 +73,7 @@
 .line{
     width: 60px;
     height: 1px;
-    background: rgba(245,253,255,0.5);
+    background: #464547;
     margin: 16px 25px;
     transition: 0.5s;
 }
@@ -103,17 +90,24 @@
 .title p{
     font-size: 20px;
 }
+.Home{
+    margin-top: 5px;
+    margin-left: 25px;
+    left: -20px;
+}
 .menu {
     width: 230px;
     margin-left: 25px;
 }
 .item{
+    width: 230px;
     display:flex;
     position: relative;
     transition: 0.5s;
     border-radius: 6px;
 }
 .item:hover {
+    width: 230px;
     background: rgba(255,255,255,0.1);
 }
 .licon{
@@ -124,6 +118,7 @@
     align-items: center;
 }
 .con{
+    font-size: 20px;
     width: 0;
     height: 50px;
     display: flex;
@@ -132,7 +127,7 @@
     transition: 0.5s;
     overflow: hidden;
     position: relative;
-    left: -20px;
+    left: 10px;
     opacity: 0;
 }
 .nav:hover .con{
@@ -160,8 +155,10 @@
     opacity: 1;
 }
 .iconfont{
-    font-size: 24px;
+ font-size: 24px;
 }
+
+
 .ricon .iconfont{
     font-size: 20px;
     color: #62cb44;
@@ -169,7 +166,7 @@
 .light{
     width: 6px;
     height: 50px;
-    background: #eb5a56;
+    background: #99ccff;
     position: absolute;
     left: -25px;
     transition: 0.5s;
@@ -183,7 +180,7 @@
 
 .serve{
     width: 60px;
-    background: rgba(0,0,0,0.7);
+    background: #f0fcff;
     margin-left: 25px;
     border-radius: 10px;
     overflow: hidden;
